@@ -1,10 +1,26 @@
-.env
+# Terraform
 .terraform/
-coverage/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# IDE / OS
+.DS_Store
+.vscode/
+*.code-workspace
+
+# Environment
+.env
 venv/
 env/
-.DS_STORE
-.vscode
-*.code-workspace
+
+# Other
+coverage/
 *.sha256
-terraform.tfstate
